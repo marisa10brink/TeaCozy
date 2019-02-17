@@ -1,0 +1,55 @@
+/* CSS Stylesheet for Tea Cozy practice website */
+
+/* ---------- General Styling and Reset ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color:seashell;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* ---------- Fixed Header Styling ---------- */
+
+header {
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  height: 69px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#logo {
+  display: inline-block;
+  height: 50px;
+}
+
+.primary-nav ul{
+  list-style: none;
+  display: flex;
+  height:30px;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+li.primary-nav, li.primary-nav a {
+  display: inline-block;
+  color: seashell;
+  padding: 10px 0;
+}
