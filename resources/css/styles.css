@@ -106,14 +106,14 @@ p.flavor {
 .features-container {
   list-style: none;
   margin: auto;
-  width: 1000px;
+  width: 1020px; /*Not sure if this was the best way to approach this, but if my math is correct, this should be just wide enough to make the distance from the edge of the first flavor image to the edge of the last one exactly 1000 pixels. */
   display: flex;
   flex-flow: row wrap;
-  justify-content:center;
-  border: 1px solid red;
+  justify-content: center;
 }
+
 .features-container li {
-  margin: 10px;
+  margin: 20px;
 }
 
 /* ---------- Locations Section ---------- */
