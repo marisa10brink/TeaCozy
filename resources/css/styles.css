@@ -12,8 +12,22 @@ html{
   font-family: Helvetica, sans-serif;
   font-size: 22px;
   color:seashell;
-  opacity: 0.9;
   text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+#main-container {
+  position: relative;
+  top: 69px;
+  opacity: 0.9;
 }
 
 /* ---------- Fixed Header Styling ---------- */
@@ -22,6 +36,7 @@ header {
   background-color: black;
   border-bottom: 1px solid seashell;
   position: fixed;
+  z-index: 10;
   width: 100%;
   box-sizing: border-box;
   height: 69px;
@@ -52,4 +67,100 @@ li.primary-nav, li.primary-nav a {
   display: inline-block;
   color: seashell;
   padding: 10px 0;
+}
+
+/* ---------- Mission Section ---------- */
+
+#mission {
+  background-image: url("../images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+}
+
+.mission-content {
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+/* ---------- Feature Tea Section ---------- */
+
+#features {
+  margin: 70px auto;
+}
+
+img.flavor {
+  display: inline-block;
+  width: 300px;
+  margin-bottom:10px;
+}
+
+p.flavor {
+  font-weight: bold;
+}
+
+.features-container {
+  list-style: none;
+  margin: auto;
+  width: 1000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  border: 1px solid red;
+}
+.features-container li {
+  margin: 10px;
+}
+
+/* ---------- Locations Section ---------- */
+
+section#locations {
+  width: 1200px;
+  height: 570px; /*Redline diagram labeled this a 500px, but measurements using dev tools said 570. Measuring using dimensions for width of location boxes also suggested that this div was taller than listed on the redline diagram.*/
+  margin: 0 auto;
+  background-image: url("../images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.loc-container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.location {    
+  background-color: black;
+  width: 300px; 
+  margin: 0 20px;
+  height: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  opacity: 1;
+}
+
+/* ---------- Contact Section ---------- */
+
+#contact {
+  height: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* ---------- Footer ---------- */
+
+footer, footer p {
+  text-align: left;
+  min-width:1200px;
+  padding: 20px;
 }

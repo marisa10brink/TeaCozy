@@ -7,7 +7,6 @@
 </head>
 
 <body>
-
 <!-- ***** Beginning of fixed navigation header ***** -->
   <header>
     <div class="logo-container">
@@ -23,6 +22,7 @@
   </header>
   
 <!-- ***** Beginning of Mission Section ***** -->
+  <div id="main-container"> <!--wrapper for main content, ends before footer -->
   <section id="mission">
     <div class="mission-content">
       <h2>Our Mission</h2>
@@ -33,7 +33,7 @@
 <!-- ***** Beginning of Tea of Month (Features) Section ***** -->
   <section id="features">
     <h2>Tea of the Month</h2>
-    <p>What's Steeping at the Tea Cozy?</p>
+    <p class="flavor">What's Steeping at the Tea Cozy?</p>
     <ul class="features-container">
       <li>
         <img class="flavor" src="resources/images/img-berryblitz.jpg" alt="Berry Blitz tea">
@@ -64,15 +64,22 @@
     <ul class="loc-container">
       <li class="location">
         <h3>Downtown</h3>
-        <p class="address"> 384 West 4th St <br> Suite 108<br>Portland, Maine</p>
+        <p> 384 West 4th St</p> 
+        <p>Suite 108</p>
+        <p>Portland, Maine</p>
       </li>
       <li class="location">
         <h3>East Bayside</h3>
-        <p class="address"> 3433 Phisherman's Avenue<br> (Northwest Corner)<br>Portland, Maine</p>
+        <p>3433 Phisherman's Avenue</p>
+        <p>(Northwest Corner)</p>
+        <p>Portland, Maine</p>
       </li>
+      <li class="location">
         <h3>Oakdale</h3>
-        <p class="address">515 Crescent Avenue<br> Second Floor<br>Portland, Maine</p>
-      <li class="location"></li>
+        <p>515 Crescent Avenue</p>
+        <p>Second Floor</p>
+        <p>Portland, Maine</p>
+      </li>
     </ul>
   </section>
 
@@ -82,12 +89,12 @@
     <h5>contact@theteacozy.com</h5>
     <h5>917-555-8904</h5>
   </section>
+  </div> <!-- end of #main-container-->
   
 <!-- ***** Beginning of Footer ***** -->
   <footer>
     <p>copyright The Tea Cozy 2017</p>
   </footer> 
-  
   
 </body>
 </html>
